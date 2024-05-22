@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.tree, .tree ul { margin: 0; padding: 0; list-style: none }
+.tree ul { margin-left: .2em; position: relative }
+.tree ul ul { margin-left: .5em }
+/*.tree ul:before { content: ""; display: block; width: 0; position: absolute; top: 0; bottom: 0; left: 0; border-left: 1px solid }*/
+.tree li { margin: 0; padding: 0 1em; line-height: 2em; color: #8c8d8e; font-weight: 700; position: relative; cursor: pointer; }
+/*.tree ul li:before { content: ""; display: block; width: 10px; height: 0; border-top: 1px solid; margin-top: -1px; position: absolute; top: 1em; left: 0 }*/
+.tree ul li:last-child:before { background: #fff; height: auto; top: 1em; bottom: 0 }
+.indicator { margin-right: 5px; position: relative; top: 6px; display: block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 400; line-height: 1; -webkit-font-smoothing: antialiased; float: left; }
+.tree li a {
+position: relative;
+text-decoration: none;
+color: #57bf34;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 24px;
+}
+.tree li button, .tree li button:active, .tree li button:focus { text-decoration: none; color: #369; border: none; background: transparent; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; outline: 0; }
+ul#tree1 li.branch i.glyphicon-plus-sign { color: #5abb03; }
+ul#tree1 li.branch i.glyphicon-minus-sign { color: #ed7c0f; }
+.tree li a span.side-menu-linsk { display: inline-block !important; }
+.tree li ul.second-level li { margin-top: 2px; }
+.tree li ul.second-level li a { color: #8c8d8e; font-size: 13px; transition: .2s ease-in-out; }
+.tree li ul.second-level li a:hover { color: #f57d25; }
+ul#tree1 li.branch a.active span.side-menu-linsk { border-bottom: #ed7c0f solid 2px; }
+ul#tree1 ul.final-level li a:before { content: "\f105"; display: inline-block; font-size: 12px; font-family: FontAwesome; margin-right:6px; }
